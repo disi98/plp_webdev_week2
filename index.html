@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements and Forms</title>
+</head>
+<body>
+    <header>
+        <h1>Advanced HTML5 Elements and Forms</h1>
+    </header>
+
+    <main>
+        <!-- Section: Ordered List -->
+        <section id="ordered-list">
+            <h2>Ordered List (Roman Numerals)</h2>
+            <ol type="I">
+                <li>Introduction</li>
+                <li>Images</li>
+                <li>Lists</li>
+                <li>Forms</li>
+                <li>Multimedia</li>
+            </ol>
+        </section>
+
+        <!-- Section: Image -->
+        <section id="external-image">
+            <h2>An External Image</h2>
+            <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg" alt="Scenic Landscape" />
+        </section>
+
+        <!-- Section: Multimedia Elements -->
+        <section id="multimedia">
+            <h2>Audio and Video</h2>
+            <!-- Audio Element -->
+            <audio controls>
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <!-- Video Element -->
+            <video width="320" height="240" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </section>
+
+        <!-- Section: Table of Contacts -->
+        <section id="contacts-table">
+            <h2>Contacts</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>123 Main St, Cityville</td>
+                        <td>+1-234-567-8900</td>
+                        <td>john.doe@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>456 Oak Ave, Townsville</td>
+                        <td>+1-345-678-9012</td>
+                        <td>jane.smith@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Bob Johnson</td>
+                        <td>789 Pine Rd, Village</td>
+                        <td>+1-456-789-0123</td>
+                        <td>bob.johnson@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Alice Brown</td>
+                        <td>321 Elm St, Hamlet</td>
+                        <td>+1-567-890-1234</td>
+                        <td>alice.brown@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Michael Green</td>
+                        <td>654 Cedar Blvd, Metropolis</td>
+                        <td>+1-678-901-2345</td>
+                        <td>michael.green@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Section: Registration Form -->
+        <section id="registration-form">
+            <h2>Registration Form</h2>
+            <form action="#" method="post">
+                <!-- Name Field -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required />
+
+                <!-- Email Field -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+                <!-- Password Field -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="********" minlength="8" required />
+
+                <!-- Date Field -->
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required />
+
+                <!-- Dropdown -->
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select Country</option>
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="australia">Australia</option>
+                </select>
+
+                <!-- Radio Buttons -->
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <label><input type="radio" name="gender" value="male" required /> Male</label>
+                    <label><input type="radio" name="gender" value="female" /> Female</label>
+                    <label><input type="radio" name="gender" value="other" /> Other</label>
+                </fieldset>
+
+                <!-- Checkboxes -->
+                <fieldset>
+                    <legend>Interests:</legend>
+                    <label><input type="checkbox" name="interests" value="coding" /> Coding</label>
+                    <label><input type="checkbox" name="interests" value="music" /> Music</label>
+                    <label><input type="checkbox" name="interests" value="sports" /> Sports</label>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>HTML5 code</p>
+    </footer>
+</body>
+</html>
